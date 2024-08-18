@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    max-width: 1200px;
+    height: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#video-call, #chat {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#video-call {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: white;
+}
+
+#my-video, #their-video {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+#start-call {
+    padding: 10px 20px;
+    background-color: #ff5722;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#chat {
+    background-color: #fff;
+    border-left: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+}
+
+#messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#message-input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-top: none;
+    flex-shrink: 0;
+}
+
+#send-message {
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+}

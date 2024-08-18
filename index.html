@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat & Video Call</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <div id="video-call">
+            <video id="my-video" autoplay playsinline></video>
+            <video id="their-video" autoplay playsinline></video>
+            <button id="start-call">Start Call</button>
+        </div>
+        <div id="chat">
+            <div id="messages"></div>
+            <input type="text" id="message-input" placeholder="Type your message...">
+            <button id="send-message">Send</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/peerjs@1.3.1/dist/peerjs.min.js"></script>
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
